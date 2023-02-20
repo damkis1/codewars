@@ -6,7 +6,7 @@ import java.util.Arrays;
 // Return a new sorted string, the longest possible,
 // containing distinct letters - each taken only once - coming from s1 or s2.
 public class TwoToOne {
-    public static String longest (String s1, String s2) {
+    public static String longest(String s1, String s2) {
         String s1s2 = s1 + s2;
         return Arrays.stream(s1s2.split(""))
                 .distinct()

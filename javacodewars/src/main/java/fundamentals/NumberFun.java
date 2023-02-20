@@ -1,4 +1,5 @@
 package fundamentals;
+
 //You might know some pretty large perfect squares. But what about the NEXT one?
 //
 //Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter.
@@ -10,10 +11,10 @@ package fundamentals;
 public class NumberFun {
     public static long findNextSquare(long sq) {
         double sqrt = Math.sqrt(sq);
-        if (Math.sqrt(sq) == Math.round(sqrt)){
+        if (Math.sqrt(sq) == Math.round(sqrt)) {
             double tmp = sqrt + 1.0;
             double pow = Math.pow(tmp, 2);
             return (long) pow;
-        }else return -1;
+        } else return -1;
     }
 }

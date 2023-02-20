@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
 //Examples (a, b) --> output (explanation)
 public class Sum {
     public static int getSum(int a, int b) {
-            if (a == b) return a;
-            return IntStream.rangeClosed(Math.min(a, b), Math.max(a, b)).sum();
-        }
+        if (a == b) return a;
+        return IntStream.rangeClosed(Math.min(a, b), Math.max(a, b)).sum();
+    }
 }

@@ -7,14 +7,14 @@ package fundamentals;
 //Examples:(Input1, Input2 --> Output (explanation)))
 
 public class BinaryAddition {
-    public static String binaryAddition(int a, int b){
+    public static String binaryAddition(int a, int b) {
         /*Integer.toBinaryString()*/
         int sum = a + b;
         int spam;
         StringBuilder binary = new StringBuilder();
-        while (sum > 0){
+        while (sum > 0) {
             spam = sum % 2;
-            sum /=2;
+            sum /= 2;
             binary.append(String.valueOf(spam));
         }
         return binary.reverse().toString();

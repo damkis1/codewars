@@ -6,7 +6,7 @@ public class SmallestIntegerFinder {
         for (int i = 0; i < args.length; i++) {
             if (smallest > args[i]) {
                 smallest = args[i];
-            }else args[i] = smallest;
+            } else args[i] = smallest;
         }
         return smallest;
     }

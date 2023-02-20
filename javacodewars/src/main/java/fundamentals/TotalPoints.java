@@ -15,14 +15,15 @@ public class TotalPoints {
         }
         return sum;
     }
-    private static int strings(String s){
+
+    private static int strings(String s) {
         int sum = 0;
         String[] split = s.split(":");
         int a = Integer.parseInt(split[0]);
         int b = Integer.parseInt(split[1]);
-        if (a > b){
+        if (a > b) {
             sum += 3;
-        }else if (a == b){
+        } else if (a == b) {
             sum += 1;
         }
         return sum;

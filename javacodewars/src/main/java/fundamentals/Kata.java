@@ -6,6 +6,6 @@ import java.util.Arrays;
 // Each positive becomes negatives, and the negatives become positives.
 public class Kata {
     public static int[] invert(int[] array) {
-       return Arrays.stream(array).map(i -> -i).toArray();
+        return Arrays.stream(array).map(i -> -i).toArray();
     }
 }
